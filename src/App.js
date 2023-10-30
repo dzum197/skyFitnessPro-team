@@ -1,5 +1,6 @@
 
 import { AppRoutes } from './routes';
+import styled,{createGlobalStyle} from 'styled-components';
 const GlobalStyle =createGlobalStyle `
    * {
       margin: 0;
@@ -16,7 +17,10 @@ const GlobalStyle =createGlobalStyle `
    `
 function App() {
   return (
-    <AppRoutes  />
+    <>
+      <GlobalStyle/>
+      <AppRoutes  />
+    </>
 
   );
 }
