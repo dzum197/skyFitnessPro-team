@@ -1,12 +1,13 @@
+import { Routes, Route } from "react-router-dom";
 import { Main } from './pages/main';
+import { YogaDesc } from "./pages/yoga-desc-page";
 
 function App() {
   return (
-    <div className="App">
-      <Main>
-
-      </Main>
-    </div>
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/YogaDesc" element={<YogaDesc />} />
+    </Routes>
   );
 }
 

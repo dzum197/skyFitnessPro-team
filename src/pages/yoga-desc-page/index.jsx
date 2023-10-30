@@ -6,14 +6,17 @@ import number2 from '../../img/numbers/number2.png'
 import number3 from '../../img/numbers/number3.png'
 import phoneHand from '../../img/phone-hand.png'
 
-export function yogaDescPage() {
-    return(
-        <S.YogaDescPage>
+export function YogaDesc() {
+    return (
+        <S.YogaDesc>
             <S.Container>
-                <S.lightLogo src={lightLogo}></S.lightLogo>
-                <S.yogaDescImage src={yogaDescImage}></S.yogaDescImage>
+                <S.imgBlock>
+                    <S.lightLogo src={lightLogo}></S.lightLogo>
+                    <S.YogaDescImage src={yogaDescImage}></S.YogaDescImage>
+                </S.imgBlock>
+                
                 <S.upperBlock>
-                    <S.bigTextBlock>Подойдет для вас, если: </S.bigTextBlock>
+                    <S.bigText>Подойдет для вас, если: </S.bigText>
                     <S.numbersBlock>
                         <S.numberBox>
                             <S.number src={number1}></S.number>
@@ -64,6 +67,6 @@ export function yogaDescPage() {
                     <S.phoneHand src={phoneHand}></S.phoneHand>
                 </S.lastTextBlock>
             </S.Container>
-        </S.YogaDescPage>
+        </S.YogaDesc>
     )
 } 
