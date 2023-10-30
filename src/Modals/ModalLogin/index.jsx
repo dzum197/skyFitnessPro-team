@@ -28,16 +28,24 @@ const ModalLogin = ({ open, setOpen }) => {
             />
             <TextField
               className={S.inputBox}
-              sx={{ width: '278px', fontSize: '18px' }}
+              sx={{
+                width: '278px',
+                label: { color: '#D0CECE', fontSize: '18px' },
+              }}
               id="standard-basic"
               label="Логин"
               variant="standard"
             />
             <TextField
-              sx={{ width: '278px', marginTop: '20px' }}
+              sx={{
+                width: '278px',
+                marginTop: '20px',
+                label: { color: '#D0CECE', fontSize: '18px' },
+              }}
               id="standard-basic"
               label="Пароль"
               variant="standard"
+              type="password"
             />
             <button className={S.buttonEntre}>Войти</button>
             <button
@@ -61,21 +69,35 @@ const ModalLogin = ({ open, setOpen }) => {
             />
             <TextField
               className={S.inputBox}
-              sx={{ width: '278px', fontSize: '18px' }}
+              sx={{
+                width: '278px',
+                fontSize: '18px',
+                label: { color: '#D0CECE', fontSize: '18px' },
+              }}
               id="standard-basic"
               label="Логин"
               variant="standard"
             />
             <TextField
-              sx={{ width: '278px', marginTop: '20px' }}
+              sx={{
+                width: '278px',
+                marginTop: '20px',
+                label: { color: '#D0CECE', fontSize: '18px' },
+              }}
               id="standard-basic"
               label="Пароль"
+              type="password"
               variant="standard"
             />
             <TextField
-              sx={{ width: '278px', marginTop: '20px' }}
+              sx={{
+                width: '278px',
+                marginTop: '20px',
+                label: { color: '#D0CECE', fontSize: '18px' },
+              }}
               id="standard-basic"
               label="Повторите пароль"
+              type="password"
               variant="standard"
             />
             <button className={S.buttonEntre}>Зарегистрироваться</button>

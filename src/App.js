@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import { Main } from './pages/main';
+import VariantsModal from './Modals/variantsModal';
 
 function App() {
   return (
@@ -9,6 +10,10 @@ function App() {
         <Route
           path="/"
           element={<Main />}
+        />
+        <Route
+          path="/testModal"
+          element={<VariantsModal />}
         />
       </Routes>
     </div>
