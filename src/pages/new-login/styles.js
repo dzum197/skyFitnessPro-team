@@ -5,18 +5,26 @@ background-color: #d1d3d6;
 display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 5%;
+    width: 100%;
+    height: 100vh;
 `;
 
 export const ConteinerBlock = styles.div`
 width:366px;
-height:401px;
+height:331px;
 background-color:#FFFFFF;
 border-radius: 12px;
-padding-top: 53px;
+padding-top: 33px;
 display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'StratosSkyeng', sans-serif;
+
+  @font-face {
+    font-family: 'StratosSkyeng';
+    src: url('../fonts/Stratos-Regular.woff') format('truetype');
+  }
 `;
 
 export const Logo = styles.img`
@@ -29,14 +37,15 @@ display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 `;
 
 export const NewPasswordText = styles.p`
 font-weight: 400;
 font-size: 18px;
 line-height: 24x;
+padding-bottom: 20px
 `;
 
 export const InputForm = styles.div`

@@ -10,6 +10,14 @@ margin-bottom: 30px;
 export const Container = styles.div`
   max-width:1140px;
   margin:0 auto;
+  font-family: 'StratosSkyeng', sans-serif;
+
+  @font-face {
+    font-family: 'StratosSkyeng';
+    src: url('../fonts/Stratos-Regular.woff') format('truetype');
+  }
+ 
+  font-family: 'StratosSkyeng', sans-serif;
 `;
 
 export const MainText = styles.p`
@@ -22,16 +30,18 @@ export const EntryText = styles.p`
 font-weight: 400;
 font-size: 24px;
 line-height: 32px;
+padding-top: 30px;
 `;
 
 export const ProfileBlock = styles.div`
-  
+margin-top: 50px;
 `;
 
 export const ProfileButtonBlock = styles.div`
 display: flex;
 flex-direction: column;
 gap: 20px;
+padding-top: 30px;
 `;
 
 export const Button = styles.button`
@@ -48,7 +58,11 @@ font-style: normal;
 `;
 
 export const MyCourses = styles.div`
-  
+margin-top: 50px;
+`;
+
+export const ImageBlock = styles.div`
+margin-top: 30px;
 `;
 
 export const Yoga = styles.img`

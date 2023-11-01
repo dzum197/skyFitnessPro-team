@@ -6,13 +6,22 @@ width:100%;
 background:white;
 display: flex;
 justify-content: space-between;
+font-family: 'StratosSkyeng', sans-serif;
+
+  @font-face {
+    font-family: 'StratosSkyeng';
+    src: url('../fonts/Stratos-Regular.woff') format('truetype');
+  }
+ 
+  font-family: 'StratosSkyeng', sans-serif;
 `;
 
 export const UserItem = styles.div`
 width:168.36px;
 height:50px;
 display: flex;
-justify-content: space-around
+justify-content: space-around;
+align-items: center;
 `;
 
 export const UserName = styles.p`

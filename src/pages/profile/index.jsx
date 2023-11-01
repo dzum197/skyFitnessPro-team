@@ -1,41 +1,32 @@
+import * as S from './styles'
 import { HeaderProfile } from "../../components/headerProfile";
 import yoga from "../../img/yoga.png";
 import stretching from "../../img/stretching.png";
 import bodyflex from "../../img/bodyflex.png";
 
-import {
-  ProfilePage,
-  Container,
-  MainText,
-  EntryText,
-  ProfileBlock,
-  ProfileButtonBlock,
-  Button,
-  MyCourses,
-  Yoga, Stretching, Bodyflex
-} from "./styles";
-
 export function Profile() {
   return (
-    <ProfilePage>
-      <Container>
+    <S.ProfilePage>
+      <S.Container>
         <HeaderProfile></HeaderProfile>
-        <ProfileBlock>
-          <MainText>Мой профиль</MainText>
-          <EntryText>Логин: sergey.petrov96</EntryText>
-          <EntryText>Пароль: 4fkhdj880d</EntryText>
-          <ProfileButtonBlock>
-          <Button>Редактировать логин</Button>
-          <Button>Редактировать пароль</Button>
-          </ProfileButtonBlock>
-        </ProfileBlock>
-        <MyCourses>
-          <MainText>Мои курсы</MainText>
-          <Yoga src={yoga}/>
-          <Stretching src={stretching}/>
-          <Bodyflex src={bodyflex}/>
-        </MyCourses>
-      </Container>
-    </ProfilePage>
+        <S.ProfileBlock>
+          <S.MainText>Мой профиль</S.MainText>
+          <S.EntryText>Логин: sergey.petrov96</S.EntryText>
+          <S.EntryText>Пароль: 4fkhdj880d</S.EntryText>
+          <S.ProfileButtonBlock>
+          <S.Button>Редактировать логин</S.Button>
+          <S.Button>Редактировать пароль</S.Button>
+          </S.ProfileButtonBlock>
+        </S.ProfileBlock>
+        <S.MyCourses>
+          <S.MainText>Мои курсы</S.MainText>
+          <S.ImageBlock>
+            <S.Yoga src={yoga}/>
+          <S.Stretching src={stretching}/>
+          <S.Bodyflex src={bodyflex}/>
+          </S.ImageBlock>
+        </S.MyCourses>
+      </S.Container>
+    </S.ProfilePage>
   );
 }

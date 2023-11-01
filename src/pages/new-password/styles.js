@@ -5,12 +5,14 @@ background-color: #d1d3d6;
 display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 5%;
+    width: 100%;
+    height: 100vh;
 `;
 
 export const ConteinerBlock = styles.div`
 width:366px;
-height:331px;
+height:401px;
 background-color:#FFFFFF;
 border-radius: 12px;
 padding-top: 53px;
@@ -29,14 +31,21 @@ display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'StratosSkyeng', sans-serif;
+
+  @font-face {
+    font-family: 'StratosSkyeng';
+    src: url('../fonts/Stratos-Regular.woff') format('truetype');
+  }
 `;
 
 export const NewPasswordText = styles.p`
 font-weight: 400;
 font-size: 18px;
 line-height: 24x;
+padding-bottom: 20px
 `;
 
 export const InputForm = styles.div`
@@ -63,7 +72,7 @@ display: flex;
 `;
 
 export const Button = styles.button`
-margin-top: 52px;
+margin-top: 42px;
 width:275px;
 height:52px;
 background: #580EA2;
