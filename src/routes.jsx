@@ -7,6 +7,7 @@ import { NewLogin } from "./pages/new-login";
 import { BodyflexDesc } from "./pages/bodyflex-desc-page";
 import { DanceDesc } from "./pages/dance-desc-page";
 import { StepDesc } from "./pages/step-desc-page";
+import { YogaVideo } from "./pages/yoga-video-page";
 
 export const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ export const AppRoutes = () => {
       <Route path="/BodyflexDescPage" element={<BodyflexDesc />} />
       <Route path="/DanceDescPage" element={<DanceDesc />} />
       <Route path="/StepDescPage" element={<StepDesc />} />
+      <Route path="/YogaVideoPage" element={<YogaVideo />} />
     </Routes>
   );
 };
