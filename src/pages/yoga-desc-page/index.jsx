@@ -15,8 +15,9 @@ export function YogaDesc() {
                     <S.YogaDescImage src={yogaDescImage}></S.YogaDescImage>
                 </S.imgBlock>
                 
+                <S.bigText>Подойдет для вас, если: </S.bigText>
+
                 <S.upperBlock>
-                    <S.bigText>Подойдет для вас, если: </S.bigText>
                     <S.numbersBlock>
                         <S.numberBox>
                             <S.number src={number1}></S.number>
@@ -35,20 +36,20 @@ export function YogaDesc() {
                     </S.numbersBlock>
                 </S.upperBlock>
                 
-                <S.middleTextBlock>
-                    <S.bigText>Направления: </S.bigText>
+                <S.bigText>Направления: </S.bigText>
 
+                <S.middleTextBlock>
                     <S.ColumnInfoText>
                         <S.ColumnInfoItem>• Йога для новичков</S.ColumnInfoItem>
                         <S.ColumnInfoItem>• Классическая йога</S.ColumnInfoItem>
                         <S.ColumnInfoItem>• Йогатерапия</S.ColumnInfoItem>
                     </S.ColumnInfoText>
 
-                    <S.ColumnInfoText>
+                    <S.secondColumnInfoText>
                         <S.ColumnInfoItem>• Кундалини-йога</S.ColumnInfoItem>
                         <S.ColumnInfoItem>• Хатха-йога</S.ColumnInfoItem>
                         <S.ColumnInfoItem>• Аштанга-йога</S.ColumnInfoItem>
-                    </S.ColumnInfoText>
+                    </S.secondColumnInfoText>
                 </S.middleTextBlock>
                     
                 <S.nextMiddleTextBlock>
@@ -64,8 +65,10 @@ export function YogaDesc() {
 
                     <S.lastTextButton>Записаться на тренировку</S.lastTextButton>
 
+                
                     <S.phoneHand src={phoneHand}></S.phoneHand>
                 </S.lastTextBlock>
+                
             </S.Container>
         </S.YogaDesc>
     )
