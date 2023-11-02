@@ -4,7 +4,7 @@ import yogaDescImage from '../../img/yoga-desc-image.png'
 import number1 from '../../img/numbers/number1.png'
 import number2 from '../../img/numbers/number2.png'
 import number3 from '../../img/numbers/number3.png'
-import phoneHand from '../../img/phone-hand.png'
+import { FooterDesc } from '../../components/footer-desc-page';
 
 export function YogaDesc() {
     return (
@@ -58,17 +58,9 @@ export function YogaDesc() {
                     заряжают бодростью и помогают противостоять стрессам.
                 </S.nextMiddleTextBlock>
 
-                <S.lastTextBlock>
-                    <S.lastText>
-                        Оставьте заявку на пробное занятие, мы свяжемся с вами, поможем с выбором направления и тренера, с которым тренировки принесут здоровье и радость!
-                    </S.lastText>
-
-                    <S.lastTextButton>Записаться на тренировку</S.lastTextButton>
-
                 
-                    <S.phoneHand src={phoneHand}></S.phoneHand>
-                </S.lastTextBlock>
-                
+                <FooterDesc/>
+
             </S.Container>
         </S.YogaDesc>
     )
