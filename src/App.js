@@ -1,23 +1,3 @@
-/*import { Profile } from "./pages/profile";
-import { NewPassword } from "./pages/new_password";
-import { NewLogin } from "./pages/new_login";
-import { BodyflexDesc } from "./pages/bodyflex-desc-page";
-import "./App.css";
-
-function App() {
-  return (
-    <div className="App">
-      <Profile></Profile>
-      <NewPassword></NewPassword>
-      <NewLogin></NewLogin>
-      <BodyflexDesc></BodyflexDesc>
-    </div>
-  );
-}
-
-export default App;*/
-
-
 import { AppRoutes } from './routes';
 import styled,{createGlobalStyle} from 'styled-components';
 const GlobalStyle =createGlobalStyle `

@@ -57,6 +57,7 @@ font-style: normal;
 `;
 
 export const MyCourses = styles.div`
+width:428px;
 
 `;
 
@@ -68,4 +69,13 @@ export const ColumnInfoItem = styles.div`
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+`;
+
+export const DownBlock = styles.div`
+display: flex;
+    gap: 40px;
+`;
+
+export const ReactPlayerBlock = styles.div`
+
 `;

@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import { HeaderProfile } from "../../components/headerProfile";
+import { Progress } from "../../components/progress";
 import ReactPlayer from "react-player/youtube";
 
 export function YogaVideo() {
@@ -13,8 +14,14 @@ export function YogaVideo() {
             Красота и здоровье / Йога на каждый день / 2 день / Алексей
             Казубский
           </S.EntryText>
-          <ReactPlayer url="https://youtu.be/v-xTLFDhoD0" />
+          <S.ReactPlayerBlock>
+            <ReactPlayer url="https://youtu.be/v-xTLFDhoD0" controls
+  width="1160" 
+  />
+          </S.ReactPlayerBlock>
+          
         </S.ProfileBlock>
+        <S.DownBlock>
         <S.MyCourses>
         <S.EntryText>
             Упражнения
@@ -28,6 +35,8 @@ export function YogaVideo() {
           <S.Button>Заполнить свой прогресс</S.Button>
           </S.ProfileButtonBlock>
         </S.MyCourses>
+        <Progress></Progress>
+        </S.DownBlock>
       </S.Container>
     </S.ProfilePage>
   );
