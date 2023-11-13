@@ -38,11 +38,22 @@ export const info = styled.div`
 
 export const cardsBlock = styled.div`
   display:flex;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
   margin: 0 -15px
   `;
-export const card = styled.img`
-    margin: 0 15px
+export const card = styled.div`
+    margin: 15px 15px;
+    width:360px;
+    position:relative;
+`;
+export const cardImg = styled.img`
+    width:100%;
+`;
+export const cardText = styled.div`
+    color:#000;
+    position:absolute;
+    top:30px;
+    left:30px;
 `;
 export const toTop = styled.div`
     margin-top:34px;

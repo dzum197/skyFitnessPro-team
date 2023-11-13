@@ -1,6 +1,6 @@
 import * as S from "./styles";
 
-export const Progress = ({ width, percent }) => {
+export const Progress = ({ width, percent,part }) => {
     
   let progress = percent * width;
 
@@ -8,7 +8,7 @@ export const Progress = ({ width, percent }) => {
     <S.MainBlock>
       <S.ColumnInfoText>
         <S.MainEntryText>
-          <S.EntryText>Мой прогресс по тренировке 2:</S.EntryText>
+          <S.EntryText>Мой прогресс по тренировке {part}:</S.EntryText>
         </S.MainEntryText>
         <S.ProgressBlock>
           <S.ColumnInfo>

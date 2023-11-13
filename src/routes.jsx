@@ -13,14 +13,15 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Main />} />
-      <Route path="/YogaDescPage" element={<YogaDesc />} />
-      <Route path="/ProfilePage" element={<Profile />} />
       <Route path="/NewPasswordPage" element={<NewPassword />} />
       <Route path="/NewLoginPage" element={<NewLogin />} />
-      <Route path="/BodyflexDescPage" element={<BodyflexDesc />} />
-      <Route path="/DanceDescPage" element={<DanceDesc />} />
-      <Route path="/StepDescPage" element={<StepDesc />} />
-      <Route path="/YogaVideoPage" element={<YogaVideo />} />
+      <Route path="/ProfilePage" element={<Profile />} />
+      <Route path="/workout/:id/:part" element={<YogaVideo />} />
+      <Route path="/course/:id" element={<BodyflexDesc />} />
+      {/* <Route path="/YogaDescPage" element={<YogaDesc />} /> */}
+      {/* <Route path="/BodyflexDescPage" element={<BodyflexDesc />} /> */}
+      {/* <Route path="/DanceDescPage" element={<DanceDesc />} /> */}
+      {/* <Route path="/StepDescPage" element={<StepDesc />} /> */}
     </Routes>
   );
 };
